@@ -33,9 +33,21 @@ function App() {
 
       <section className="expense-list">
         <div className="display-expense-container">
-          
+        <div className="display-expense">
+        <h2>Overview of expenses:</h2>
+        <ul>
+          <li>
+            <span><b>Title:</b></span>
+            <span><b>Amount:</b></span>
+            <span><b>Date:</b></span>
+            <span><b>Category:</b></span>
+            <button className="delete-button">Delete ❌</button>
+          </li>
+        </ul>
+      </div>
         </div>
       </section>
+
     </div>
     </>
   );
