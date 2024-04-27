@@ -5,9 +5,10 @@ function App() {
   
 
   return (
-   
+   <>
+    <div className="main-container">
       <form className="expense-form">
-        <h2>Add your expenses!</h2>
+        <h2>Add your expenses 📝</h2>
         <label htmlFor="expense-title"><b>Expense title:</b></label>
         <input type="text" name="title" required />
 
@@ -29,7 +30,16 @@ function App() {
 
         <button type="submit" className="submit-button">Add ➕</button>
       </form>
+
+      <section className="expense-list">
+        <div className="display-expense-container">
+          
+        </div>
+      </section>
+    </div>
+    </>
   );
 }
+
 
 export default App
