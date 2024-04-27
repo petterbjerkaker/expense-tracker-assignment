@@ -5,7 +5,7 @@ function App() {
   
 
   return (
-    <>
+   
       <form className="expense-form">
         <h2>Add your expenses!</h2>
         <label htmlFor="expense-title"><b>Expense title:</b></label>
@@ -26,10 +26,10 @@ function App() {
           <option value="Clothes">Clothes</option>
           <option value="Other">Other</option>
         </select>
-        
+
+        <button type="submit" className="submit-button">Add ➕</button>
       </form>
-    </>
-  )
+  );
 }
 
 export default App
