@@ -54,3 +54,49 @@
   flex-direction: column;
   background-color: lightslategray;
 }
+
+.display-expense-container{
+  flex-basis:85%;
+  padding: 0 1rem;
+}
+
+.display-expense{
+  display: flex;
+  flex-direction: column;
+}
+
+.display-expense h2{
+  padding:1rem;
+  margin-bottom:1rem;
+}
+
+.display-expense ul{
+  list-style:none;
+  padding:0;
+}
+
+.display-expense li{
+  padding:0.25rem;
+  margin-bottom: 1rem;
+  border:2px solid black;
+  background-color: white;
+  height:2rem;
+}
+
+.display-expense span{
+  margin-bottom:0.5rem;
+  padding:0.5rem;
+}
+
+.delete-button{
+  width:6rem;
+  height:1.5rem;
+  font-weight:bold;
+  cursor: pointer;
+  border-radius:0.25rem;
+  border:none;
+}
+
+.delete-button:hover{
+  color: crimson;
+}
