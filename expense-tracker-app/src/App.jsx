@@ -1,9 +1,36 @@
 import React from "react";
 import './App.css';
 
-function App() {
-  
+class App extends React.Component {
+  constructor (props){
+    super(props);
+    this.state = {
+      expenses:[]
+    };
+  }
 
+  addExpense = (newExpense) =>{
+    this.setState({
+      expenses: [...this.state.expenses, newExpense]
+    });
+  };
+
+  handleDeleteExpense = (updatedExpenses)=>{
+    this.setState({ expenses: updatedExpenses });
+  };
+
+
+  render(){
+    return (
+      <>
+        <div className="main-container">
+          <ExpenseForm addExpense={this.addExpense} />
+          <ExpenseList expenses={this.state.expenses} onDelete={this.handleDeleteExpense}/>
+        </div>
+      </>
+    );
+  }
+}
   return (
    <>
     <div className="main-container">
@@ -51,7 +78,7 @@ function App() {
     </div>
     </>
   );
-}
+};
 
 
-export default App
+export default App;
