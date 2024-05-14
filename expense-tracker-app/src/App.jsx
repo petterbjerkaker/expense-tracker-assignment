@@ -139,7 +139,7 @@ class DisplayExpenses extends React.Component{
               <button 
                 className="delete-button" 
                 onClick={()=> 
-                this.handleDelete(index)}>Delete ❌
+                this.handleDelete(index)}>Delete❌
               </button>
            </li>
           ))}
